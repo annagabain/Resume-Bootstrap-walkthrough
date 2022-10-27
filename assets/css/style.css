@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 
-/*---------------------------------Colours*/
+/*--------------------------------------------Colors*/
+
 .bg-color-name-title {
     background-color: #676767;
 }
@@ -15,7 +16,10 @@
 
 .bg-color-work-history {
     background-color: #9b59b6;
+}
 
+.bg-color-contact {
+    background-color: #fff;
 }
 
 .ui-menu-color-home {
@@ -34,7 +38,7 @@
     background-color: #525252;
 }
 
-/*---------------------------------Special paddings/margins/text*/
+/* ----------------------------------------Special paddings/margins/text */
 
 h1,
 h2,
@@ -74,7 +78,8 @@ h4 {
     margin-top: 25px;
     margin-bottom: 40px;
 }
-/*---------------------------------Heading*/
+
+/*--------------------------------------------Heading*/
 
 header {
     margin: 0;
@@ -100,7 +105,7 @@ header {
     font-weight: 100;
     font-size: 46px;
     margin-top: 50px;
-    color: #fff
+    color: #fff;
 }
 
 .title {
@@ -113,21 +118,20 @@ header {
 }
 
 .list-inline-item:not(:last-child) {
-    margin-right: 0;
-    margin-left: 0;
+    margin: 0;
 }
 
 .menucontainer {
     font-size: 0;
 }
 
-#nav {
-    margin: 0;
-}
-
 #nav li {
     font-size: 14px;
     padding: 0;
+}
+
+#nav {
+    margin: 0;
 }
 
 .menuitem {
@@ -161,14 +165,14 @@ header {
     letter-spacing: 2px;
 }
 
-/*---------------------------------Hover.css*/
+/*--------------------------------------------Hover.css*/
 
 .hvr-sweep-to-bottom:before {
-    background-color: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.2);
     height: 120px;
 }
 
-/*---------------------------------Footer*/
+/* ----------------------------------------Footer */
 
 footer {
     background-color: #525252;
@@ -193,7 +197,7 @@ footer {
 }
 
 .social-links {
-    padding-bottom: 15px
+    padding-bottom: 15px;
 }
 
 .social-links li a i {
@@ -220,7 +224,7 @@ footer {
     padding: 20px;
 }
 
-/*---------------------------------Three reasons*/
+/* ----------------------------------------Three Reasons */
 
 .three-reasons-icon {
     font-size: 26px;
@@ -231,7 +235,7 @@ footer {
     margin-bottom: 15px;
 }
 
-/*---------------------------------Personal Info*/
+/* ----------------------------------------Personal Info */
 
 .personal-info-item {
     margin-bottom: 20px;
@@ -266,7 +270,7 @@ footer {
     width: 60%;
 }
 
-/*---------------------------------Skills*/
+/* ----------------------------------------Skills */
 
 .progress {
     position: relative;
@@ -287,7 +291,7 @@ footer {
     margin: 40px 20px;
 }
 
-/*---------------------------------Work History*/
+/* ----------------------------------------Work History */
 
 .history-heading {
     color: #fafafa;
@@ -314,7 +318,7 @@ footer {
     display: block;
     font-family: "Exo", sans-serif;
     font-weight: 500;
-    font-size: 0.8em;;
+    font-size: 0.8em;
     padding: 0;
     margin: 0;
 }
@@ -328,9 +332,42 @@ footer {
     left: -6px;
     border-radius: 12px;
     content: '';
-    background-color: #fafafa;
+    background: #fafafa;
 }
 
 .history-items {
     margin-bottom: 30px;
+}
+
+/* ----------------------------------------Contact Form */
+
+.contact-heading {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.center-form {
+    padding-top: 10px;
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+button[type="submit"] {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color: #fafafa;
+    background-color: #e84610;
+}
+
+/* ----------------------------------------Media Queries */
+
+@media(min-width: 992px) {
+    .center-form {
+        padding-top: 30px;
+        min-height: 240px;
+        margin: 0 auto;
+        max-width: 50%;
+    }
 }
